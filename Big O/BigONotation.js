@@ -1,4 +1,5 @@
 // Calculate the sum of all numbers from 1 up to (and including) some number n
+// multiply, add, divide
 
 // First solution
 function addUpTo1(n) {
