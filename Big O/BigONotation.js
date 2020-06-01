@@ -1,0 +1,47 @@
+// Calculate the sum of all numbers from 1 up to (and including) some number n
+
+// First solution
+function addUpTo1(n) {
+  let total = 0;
+  for(let i=1; i<=n; i++) {
+    total += i;
+  }
+  return total;
+};
+// output = 6 * (6 + 1) / 2
+console.log(addUpTo1(6));
+
+
+// Second solution
+function addUpTo2() {
+  // output = 6 * (6 + 1) / 2
+  return n * (n + 1) / 2;
+};
+console.log(addUpTo1(6));
+
+
+// Solution 1 using timer to show performance
+function addUpToTimer1(n) {
+  let total = 0;
+  for(let i=1; i<=n; i++) {
+    total += i;
+  }
+  return total;
+};
+
+let t1 = performance.now();
+addUpToTimer1(1000000000);
+let t2 = performance.now();
+// ouptut = (t2 - t1) / 1000
+console.log(`Time elapsed: ${(t2 - t1) / 1000} seconds`);
+
+// Solution 2 using timer to show performance
+function addUpToTimer2(n) {
+  return n * (n + 1) / 2;
+};
+
+let time1 = performance.now();
+addUpToTimer2(1000000000);
+let time2 = performance.now();
+// output = (time2 - time1) / 1000
+console.log(`Time elapsed: ${(time2 - time1) / 1000} seconds`);
