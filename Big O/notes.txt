@@ -1,0 +1,12 @@
+Big O Notation is a way to formalize fuzzy counting
+It allows us to talk about how the runtime of an 
+algorithm grows as the inputs grow
+
+We say that an algorithm is O(f(n)) if the number
+of simple operations is eventually less than a 
+constant number of timesf(n), as n increases
+
+f(n) could be linear (f(n) = n)
+f(n) could be quadratic (f(n) = n2)
+f(n) could be constant (f(n) = 1)
+f(n) could also be something entirely different
