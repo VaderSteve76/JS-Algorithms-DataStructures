@@ -11,3 +11,24 @@ Big O of Object Methods:
   Object.values - O(n)
   Object.entries - O(n)
   hasOwnProperty - O(1)
+
+
+Big O of Arrays:
+  Insertion - It depends...
+  Removal - It depends...
+  Searching - O(n)
+  Access - O(1)
+
+
+Big O of Array Operations:
+  push - O(1)
+  pop - O(1)
+  shift - O(n)
+  unshift - O(n)
+  concat - O(n)
+  slice - O(n)
+  splice - O(n)
+  sort - O(n * log n)
+  forEach,map,filter,reduce etc - O(n)
+
+Hint: generally a bad idea to use shift/unshift, better to use push/pop
