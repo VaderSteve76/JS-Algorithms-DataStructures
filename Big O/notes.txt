@@ -42,6 +42,17 @@ Space complexity:
   most primitives(booleans, numbers, undefined, null) are constant space
 
   Strings require O(n) space (where n is the string length)
-  
+
   Reference types are generally O(n), where n is the length(for arrays)
   or the number of keys(for objects)
+
+
+Recap:
+
+  1. To analyze the performance of an algorithm, we use Big object
+  2. Big O can give high level understanding of the time or space
+     complexity of an alforithm
+  3. Big O doesn't care about precision, only about general trends
+     (linear, quadratic, constant)
+  4. The time or space complexity(as measured by Big O) depends
+     only on the algorithm, not the hardware used to run the algorithm
