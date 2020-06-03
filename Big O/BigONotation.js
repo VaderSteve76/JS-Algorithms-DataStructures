@@ -54,7 +54,7 @@ function countUpAndDown(n) {
     console.log(i);
   }
   console.log("At the top!\nGoing Down...");
-  for(let j = n - 1; j>=0; j--) {
+  for(let j=n - 1; j>=0; j--) {
     console.log(j);
   }
   console.log("Back Down. Bye!");
@@ -63,7 +63,7 @@ function countUpAndDown(n) {
 // Nested loop example for O(n * n)
 function printAllPairs(n) {
   for(var i=0; i<n; i++) {
-    for(var j = 0; j < n; j++) {
+    for(var j=0; j < n; j++) {
       console.log(i, j);
     }
   }
@@ -81,4 +81,23 @@ function logAtMost5(n) {
   for(var i=1; i<=Math.min(5, n); i++) {
     console.log(i);
   }
+};
+
+
+// Sapce complexity example
+function sum(arr) {
+  let total = 0;
+  for(let i=0; i<arr.length; i++) {
+    total += arr[i];
+  }
+  return total;
+};
+
+// Function doubles all items in arr, O(n) space
+function double(arr) {
+  let newArr = [];
+  for(let i=0; i<arr.length; i++) {
+    newArr.push(2*arr[i]);
+  }
+  return newArr;
 };
