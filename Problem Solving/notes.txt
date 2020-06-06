@@ -1,0 +1,16 @@
+Objective:
+  1. Define what an algorithm is
+
+  2. Devise a plan to solve algorithms
+
+  3. Compare and contrast problem solving 
+     patterns including frequency counters
+     two pointer problems and divide & conquer
+
+
+Definition of alogrithm:
+  A process or set of steps to accomplish a task
+
+How to i,prove:
+  1. Devise a plan
+  2. Master common problem solving patterns
