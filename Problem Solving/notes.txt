@@ -42,3 +42,18 @@ Refactoring:
   5. Can you improve the performance of your solution?
   6. Can you think of other ways to refactor?
   7. How have other people solved this problem?
+
+
+Frequency counters:
+  Uses objects or sets to collect values/frequencies of values
+  Can often avoid the need for nested loops or O(n^2) operations
+  with arrays/strings
+
+  Example:
+    Write a function called same, which accepts 2 arrays.
+    the function should return true if every value in the array
+    has it's corresponding value squared in the 2nd array.
+    The frequency of values must be the same.
+    same([1,2,3], [4,1,9]) //true
+    same([1,2,3], [1,9]) //false
+    same([1,2,1], [4,4,1]) //false
