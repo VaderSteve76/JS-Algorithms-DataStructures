@@ -61,3 +61,10 @@ Frequency counters:
     Write a function to determine if the 2nd string 
     is an anagram of the 1st.
     ie. validAnagram('anagram', 'aaagmnr') // true
+
+    Write a function called sumZero which accepts a sorted array
+    of integers. The function should find the first pair where
+    the sum is 0. Return an array that includes both values that
+    sum to zero or undefined if a pair doesn't exist.
+    ie. sumZero([-3,-2,-1,0,1,2,3]) //[-3,3]
+    sumZero9[1,2,3] // undefined
