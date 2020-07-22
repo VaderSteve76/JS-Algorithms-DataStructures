@@ -132,4 +132,5 @@ function validAnagram(first, second) {
       lookup[letter] -=1;
     }
   }
+  return true;
 };
