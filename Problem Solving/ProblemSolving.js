@@ -176,4 +176,24 @@ function countUniqueValues(arr) {
   }
   return i + 1;
 };
-countUniqueValues([1,1,2,2,3,3,4,4,5,5,6,6,7,7])
+countUniqueValues([1,1,2,2,3,3,4,4,5,5,6,6,7,7]);
+
+
+function maxSubarraySum(arr, num) {
+  if(num > arr.length) {
+    return null;
+  }
+  var max = -Infinity;
+  for(let i = 0; i < arr.length - num + 1; i++) {
+    let temp = 0;
+    for(let j = 0; j < num; j++) {
+      temp += arr[i + j];
+    }
+    if(temp > max) {
+      max = temp;
+    }
+    // console.log(temp,max);
+  }
+  return max;
+};
+maxSubarraySum([2,6,9,2,1,8,5,6,3], 3); 

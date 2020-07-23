@@ -73,3 +73,17 @@ Frequency counters:
     sorted array, and counts the unique values in the array.
     There can be negative numbers in the array but can be sorted.
     countUniqueValues([1,1,1,1,1,2]) // 2
+
+
+Sliding Window:
+  This pattern involves creating a window which can either be an
+  array or number from one position to another. Depending on a 
+  certain condition, the window increases or closes and a new 
+  window is created. Useful for keeping track of a subset of
+  data in an existing array/string etc.
+
+    Write a function called maxSubarraySum which accepts an 
+    array of integers and a number called n. The function
+    should calculate the maximum sum of n consecutive
+    elements in the array.
+    maxSubarraySum([1,2,5,2,8,1,5],4) // 17
