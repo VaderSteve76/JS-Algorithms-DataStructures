@@ -163,3 +163,17 @@ function sumZero2(arr) {
   }
 };
 sumZero2([-4,-3,-2,1-,0,1,2,3,10]);
+
+
+function countUniqueValues(arr) {
+  var i = 0;
+  for(var j = 1; j < arr.length; j++) {
+    if(arr[i] !== arr[j]) {
+      i++;
+      arr[i] = arr[j];
+    }
+    // console.log(1,j);
+  }
+  return i + 1;
+};
+countUniqueValues([1,1,2,2,3,3,4,4,5,5,6,6,7,7])
