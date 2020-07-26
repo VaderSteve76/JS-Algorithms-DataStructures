@@ -1,0 +1,5 @@
+Recursion:
+  1. Define what recursion is and how it can be used (function that calls itself until base case is met,invoke the same function with a different input until you reach base case)
+  2. Understand the 2 essential components of a recursive function
+  3. Visualize the call stack to better debug and understand recursive functions
+  4. Use helper method recursion and pure recursion to solve more difficult problems
