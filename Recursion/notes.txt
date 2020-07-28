@@ -10,7 +10,12 @@ Helper Method Recursion:
   function outer(notRecursive) {
 
     function inner(isRecursive) {
-      
+
     }
 
   }
+
+Pure Recursion:
+  1. For arrays, use methods like slice, spread operator and concat so you don't mutate the arrays
+  2. Strings are immutable so you need to use slice, substr, or substring to make copies
+  3. To make copies of objects use Object.assign, or the spread operator
