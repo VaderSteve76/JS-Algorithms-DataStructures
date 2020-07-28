@@ -3,3 +3,14 @@ Recursion:
   2. Understand the 2 essential components of a recursive function
   3. Visualize the call stack to better debug and understand recursive functions
   4. Use helper method recursion and pure recursion to solve more difficult problems
+
+Helper Method Recursion:
+  An outer function that is not recursive that calls an inner function that is recursive
+
+  function outer(notRecursive) {
+
+    function inner(isRecursive) {
+      
+    }
+
+  }
