@@ -141,3 +141,26 @@ function factorial(x) {
   if(x <= 1) return 1;
   return x * factorial(x - 1);
 };
+
+
+// Product of Array
+function productOfArray(arr) {
+  if(arr.length === 0) {
+    return 1;
+  }
+  return arr[0] * productOfArray(arr.slice(1));
+};
+
+
+// Recursive Range
+function recursiveRange(x) {
+  if(x === 0) return 0;
+  return x + recursiveRange(x - 1);
+};
+
+
+// Fibonacci
+function fib(n) {
+  if(n <= 2) return 1;
+  return fib(n - 1) + fib(n - 2);
+};
