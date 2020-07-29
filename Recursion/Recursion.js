@@ -124,3 +124,20 @@ function collectOddValues(arr) {
 };
 
 collectOddValues([1,2,3,4,5,6,7]); // 1,3,5,7
+
+
+// Recursion exercises
+
+// Power
+function power(base, exponent) {
+  if(exponent === 0) return 1;
+  return base * power(base, exponent - 1);
+};
+
+
+// Factorial
+function factorial(x) {
+  if(x < 0) return 0;
+  if(x <= 1) return 1;
+  return x * factorial(x - 1);
+};
