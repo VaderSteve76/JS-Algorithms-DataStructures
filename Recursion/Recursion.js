@@ -202,3 +202,27 @@ function flatten(oldArr){
   } 
   return newArr;
 };
+
+
+// CapitalizeWords
+function capitalizeWords(arr) {
+  if(arr.length === 1) {
+    return [arr[0].toUpperCase()];
+  }
+  let res = capitalizeWords(arr.slice(0, -1));
+  res.push(arr.slice(arr.length-1)[0].toUpperCase());
+  return res;
+};
+
+
+// nestedEvenSum
+function nestedEvenSum(obj, sum=0) {
+  for(var key in obj) {
+    if(typeof obj[key] === 'object') {
+      sum += nestedEvenSum(obj[key]);
+    } else if(typeof obj[key] === 'number' && obj[key] % 2 === 0) {
+      sum += obj[key];
+    }
+  }
+  return sum;
+};
