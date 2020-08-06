@@ -1,0 +1,11 @@
+Selection Sort:
+  Similar to bubble sort, but instead of first placing large values
+  into sorted position, it places small values into sorted position
+    1. Store the first element as the smallest value seen so far
+    2. Compare this item to the next item in the array until you find
+    a smaller item
+    3. If a smaller item is found, designate that smaller item to bubble
+    the new "minimum" and continue until the end of the array
+    4. If the "minimum" isn't the value(index) you initially began
+    with, swap the two values
+    5. Repeat this with the next element until the array is sorted
