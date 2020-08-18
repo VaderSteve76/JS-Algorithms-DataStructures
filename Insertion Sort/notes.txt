@@ -1,0 +1,6 @@
+Insertion Sort:
+  Builds up the sort by gradually creating a larger left half which is always sorted.
+  Starts by picking the second element in the arr. Now compare the second element with
+  the one before it and swap if necessary. Continue to the next element and if it is in the
+  incorrect order, iterate through the sorted portion(left) to place it in the correct place.
+  Repeat until array is sorted.
