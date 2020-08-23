@@ -26,6 +26,22 @@ function insertionSort(arr) {
           arr[j+1] = current;
       }
   return arr;
-}
+};
+
+insertionSort([2,1,9,76,4]);
+
+
+// insertionSort with swap method
+function insertionSort(arr) {
+  for (let i = 1; i < arr.length; i++) {
+    let currentIndex = i
+    while (currentIndex > 0 && arr[currentIndex - 1] > arr[currentIndex]) {
+      let temp = arr[currentIndex]
+      arr[currentIndex] = arr[currentIndex - 1]
+      arr[currentIndex - 1] = temp
+      currentIndex--
+    }
+  }
+};
 
 insertionSort([2,1,9,76,4]);
