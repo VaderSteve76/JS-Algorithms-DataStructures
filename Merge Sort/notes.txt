@@ -14,4 +14,5 @@ Merging Arrays:
   push the value in the first array into our results and move on to the next value
   in the first array. If the value in the first array is larger than the value in the
   second array, push the value in the second array inot our results and move on to the
-  next value in the second array.
+  next value in the second array. Once we exhaust one array, push all remaining values
+  from the other array.
