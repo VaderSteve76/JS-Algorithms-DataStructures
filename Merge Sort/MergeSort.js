@@ -1,5 +1,5 @@
 // Merge sort
-function mergeSort(arr1, arr2) {
+function merge(arr1, arr2) {
   let results = [];
   let i = 0;
   let j = 0;
@@ -23,4 +23,16 @@ function mergeSort(arr1, arr2) {
   return results;
 };
 
-mergeSort([1,10,50], [2,14,99,100]);
+merge([1,10,50], [2,14,99,100]);
+
+
+// Merge sort
+function mergeSort(arr) {
+  if(arr.length <= 1) return arr;
+  let mid = Math.floor(arr.length/2);
+  let left = mergeSort(arr.slice(0,mid));
+  let right = mergeSort(arr.slice(mid));
+  return merge(left, right);
+};
+
+ergeSort([10,24,76,73,72,1,9]);
