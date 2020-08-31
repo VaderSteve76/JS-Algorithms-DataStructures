@@ -1,0 +1,14 @@
+Quick Sort:
+  Like merge sort, exploitshe fact that arrays of 0 or 1 elements are already sorted.
+  Works by selecting one element(called pivot) and finding the index where the pivot
+  should end up in the sorted array. Once the pivot is positioned appropriately,
+  quick sort can be applied on either side of the pivot.
+
+Pivot Helper:
+  In order to implement Merge Sort, it's useful to first implement a function responsible
+  for arranging elements in an array on either side of the pivot. Given an array, this
+  helper function should designate an element as the pivot. It should then rearrange
+  elements in the array so that all values less than the pivot are moved to the left
+  and all values higher than the pivot are moved to the right. The order of the 
+  elements on either side of the element doesn't matter. The helper should do this 
+  in place and not create a new array. When complete the helper should return the index.
