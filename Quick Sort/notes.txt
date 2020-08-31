@@ -12,3 +12,16 @@ Pivot Helper:
   and all values higher than the pivot are moved to the right. The order of the 
   elements on either side of the element doesn't matter. The helper should do this 
   in place and not create a new array. When complete the helper should return the index.
+
+    Picking a pivot:
+      The runtime of Quick Sort depends on how you select the pivot. Ideally the pivot
+      should be chosen so that it's roughly he median value in the data set to be sorted.
+
+    Pivot Pseudocode:
+      It will help accept 3 arguments, an array, start index and an end index
+      (these can default to 0 and the array length -1). Grab the pivot from the start.
+      Store the current pivot index in a variable, where the pivot should end up. 
+      Loop through the array from the start to the end. If the pivot is greater than
+      the current element, increment the pivot index variable then swap the current 
+      element with the element at the pivot index. Swap the starting element with 
+      the pivot index then return the pivot index.
