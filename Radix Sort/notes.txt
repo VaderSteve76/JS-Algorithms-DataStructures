@@ -1,0 +1,10 @@
+Radix Sort:
+  Radix sort is a special sorting algorithm that works on lists of numbers.
+  It never makes comparisons of elements. It exploits he fact that information
+  about the size of a number is encoded in the number of digits. More digits
+  means a bigger number.
+
+Radix Sort Helpers:
+  In order to implement Radix sort , it's helpful to build a few helper functions.
+
+  getDigit(num, place) - returns the digit in num at the given place value
