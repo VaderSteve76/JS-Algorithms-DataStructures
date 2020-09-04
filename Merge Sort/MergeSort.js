@@ -35,4 +35,4 @@ function mergeSort(arr) {
   return merge(left, right);
 };
 
-ergeSort([10,24,76,73,72,1,9]);
+mergeSort([10,24,76,73,72,1,9]);
