@@ -31,6 +31,11 @@ class Student {
     return sum/this.scores.length;
   }
 
+  // class methods
+  static enrollStudents(...students) {
+    return "Enrolling Students"
+  }
+
 }
 
 // creating objects from classes, using the "new" keyword
@@ -42,3 +47,6 @@ firstStudent.fullName(); // "Joe Blow"
 firstStudent.markLate();
 firstStudent.addScore(94);
 firstStudent.calculateAvg();
+
+// calling class methods
+Student.enrollStudents();
