@@ -14,3 +14,11 @@ Linked List:
       Indexed in order!
       Insertion and deletion can be expensive
       Can be quickly accessed at a specific index
+
+
+  Pushing Pseudocode:
+    This function should accept a value. Create a new node using the value
+    passed to the function. If there is no head property on the list, structure
+    the head and tail to be the newly created node. Otherwise set the next property
+    on the tail to be the new node and set the tail property on the list to be the
+    newly created node. Increment length by 1. Return the linked list.
