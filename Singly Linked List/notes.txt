@@ -16,6 +16,9 @@ Linked List:
       Can be quickly accessed at a specific index
 
 
+Push:
+  Adding a new node to the end of the linked list
+
   Pushing Pseudocode:
     This function should accept a value. Create a new node using the value
     passed to the function. If there is no head property on the list, structure
@@ -24,6 +27,9 @@ Linked List:
     newly created node. Increment length by 1. Return the linked list.
 
 
+Pop:
+  Removing a node from the end of the linked list
+
   Popping Pseudocode:
     If there are no nodes in the list, return undefined. Loop through the list
     until you reach the tail. Set the next property of the 2nd to last node to 
@@ -31,11 +37,17 @@ Linked List:
     the list by 1. Return the value of the node removed.
 
 
+Shift:
+  Removing a new node from the beginning of the linked list
+
   Shifting Pseudocode:
     If there are no nodes, return undefined. Store the current head property
     in a variable. Set the head property to the current heads next property.
     Decrement the length by 1. Return the value of the node removed.
 
+
+Unshift:
+  Adding a new node to the beginning of the linked list
 
   UnShifting Pseudocode:
     This function should accept a value. Create a new node using the value
@@ -44,3 +56,12 @@ Linked List:
     created node's next property to be the current head property on the list.
     Set the new head property on the list to be that newly created node.
     Increment the length of the list by 1. return the linked list.
+
+
+Get:
+  Retrieving a node by it's position in the linked list
+
+Get Pseudocode:
+  This function should accept an index. If the index is less than 0 or greater
+  than or equal to the length of the list, return null. Loop through the list
+  until you reach the index and return the node at that specific index.
