@@ -74,3 +74,16 @@ Set:
     This function should accept a value and an index. Use the Get function to find
     the specific node. If node is not found, return false. If the node is found, set
     the value of that node to be the value passed to the function and return true.
+
+
+Insert:
+  Adding a node to the linked list at a specific position.
+
+  Insert Pseudocode:
+    If the index is less than 0 or greater than the length, return false.
+    If the index is the same as the length, push a new node to the end of
+    the list. If the index is 0, unshift a new node to the start of the 
+    list. Otherwise, using the get method, access the node at the index -1.
+    Set the next property on that node to be the new node. Set the next 
+    property on the new node to be the previous next. Increment the length,
+    return true.
