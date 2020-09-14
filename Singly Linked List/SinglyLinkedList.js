@@ -95,12 +95,23 @@ class SinglyLinkedList {
     if(index === this.length) this.push(val);
     if(index === 0) return this.unshift(val);
     var newNode = new node(val);
-    var prev = this.get(index -1);
+    var prev = this.get(index - 1);
     var temp = prev.next;
     prev.next = newNode;
     newNode.next = temp;
     this.length++;
     return true;
+  }
+
+  remove(index) {
+    if(index < 0 || index >= this.length) return undefined;
+    if(index === 0) return this.shift();
+    if(index === this.length - 1) return this.pop();
+    var prevNode = this.get(index - 1);
+    var removed = prevNode.next;
+    prevNode.next = removed.next;
+    this.length--;
+    return removed;
   }
 
 };
