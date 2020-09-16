@@ -1,0 +1,4 @@
+Doubly Linked List:
+  Same as a singly linked list except has a pointer in both directions
+  pointing to the prev node and next node. Uses more memory because of
+  pointers in both directions.
