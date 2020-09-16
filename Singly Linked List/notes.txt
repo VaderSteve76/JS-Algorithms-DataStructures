@@ -110,3 +110,11 @@ Reverse:
     whatever node is. Set the next property on the node to be whatever prev is.
     Set the prev to be the value of the node variable. Set the node variable to
     be the value of the next variable.
+
+
+Recap:
+  Singly linked lists are an excellent alternative to arrays when Insertion
+  and deletion at the beginning are frequently required. Arrays contain a 
+  built in index whereas linked lists do not. The idea of a list of data 
+  structure that consists of nodes is the foundation for other data 
+  structures like stacks and queues.
