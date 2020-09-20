@@ -15,3 +15,14 @@ Push:
     the newly created node to be the tail. Set the tail to be
     the newly created node. Increment the length. Return the 
     doubly linked list.
+
+
+Pop:
+  Removing a node from the end of the doubly linked list.
+
+  Pop Pseudocode:
+    If there is no head, return undefined. Store the current tail
+    in a variable to return later. If the length is 1, set the head
+    and tail to be null. Update the tail to be the previous node.
+    Set the newTails next to be null. Decrement the length. Return
+    the value removed.
