@@ -26,3 +26,14 @@ Pop:
     and tail to be null. Update the tail to be the previous node.
     Set the newTails next to be null. Decrement the length. Return
     the value removed.
+
+
+Shift:
+  Removes a node from the beginning of the doubly linked list.
+
+  Shift Pseudocode:
+    If the length is 0, return undefined. Store the current head property
+    in a variable(oldHead). If the length is 1, set the head & tail to be
+    null. Update the head to be the next of the old head. Set the head's
+    previous property to be null. Set the old head's next to be null.
+    Decrement the length. Return old head.
