@@ -48,3 +48,15 @@ UnShift:
       property on the head of the list to be the new node and set the next 
       property on the new node to be the head property. Update the head to be
       the new node. Increment the length. Return the list.
+
+
+Get:
+  Accessing a node in a doubly linked list by its position.
+
+  Get Pseudocode:
+    If the index is less than 0 or greater or equal to the length return null.
+    If the index is less than  or equal to half the length of the list loop 
+    through the list starting from the head and loop towards the middle, return
+    the node once it is found. If the index is greater than half the length of 
+    the list loop through the list starting from the tail and loop towards the
+    middle, return the node once it is found.
