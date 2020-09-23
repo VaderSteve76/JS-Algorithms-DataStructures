@@ -60,3 +60,13 @@ Get:
     the node once it is found. If the index is greater than half the length of 
     the list loop through the list starting from the tail and loop towards the
     middle, return the node once it is found.
+
+
+Set:
+  Changing the value of a node in it's position in the doubly linked list.
+
+  Set Pseudocode:
+    Create a variable which is the result of the get method at the index
+    passed to the function. If the get method returns a valid node, set
+    the value of that node to be the value passed to the function. Return
+    true, otherwise return false.
