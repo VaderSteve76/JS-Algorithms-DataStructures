@@ -1,0 +1,5 @@
+Stacks:
+  A LIFO data structure. The last element added to the stack will be the
+  first element removed from the stack. Used to manage function invocations.
+  Undo / Redo, ctrl + z. Routing(the history of an object) is treated like
+  a stack. 
