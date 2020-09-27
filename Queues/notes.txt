@@ -1,0 +1,3 @@
+Queues:
+  A FIFO data structure. Are used in background tasks, uploading/downloading
+  printing/task processing.
