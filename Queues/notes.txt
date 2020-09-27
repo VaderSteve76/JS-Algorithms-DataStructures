@@ -1,3 +1,9 @@
 Queues:
   A FIFO data structure. Are used in background tasks, uploading/downloading
   printing/task processing.
+
+  Enqueue Pseudocode:
+    This function accepts some value. Create a new node using that value passed
+    to the function. If there are no nodes in the queue, set this node to be the
+    first and last property of the queue. Increment the size of the queue and return
+    the queue.
