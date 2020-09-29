@@ -1,0 +1,10 @@
+Binary Search Tree:
+  A data structure that consists of nodes in a parent/child relationship.
+  Binary search tree is nonlinear, lists are linear. The root is the top
+  node of the tree. Child is a node directly connected to another node
+  when moving away from the root. Parent is the node connected between 
+  the root and child, converse notion of a child. Siblings is a group of 
+  nodes with the same parent. Leaf is a node without children. Edge is
+  the connection between one node and another. The root only has 2 children
+  the left is always less than the root and the right is always greater.
+  Each child of every parent works the same left=less right=greater.
