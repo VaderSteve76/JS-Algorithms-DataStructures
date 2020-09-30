@@ -8,3 +8,14 @@ Binary Search Tree:
   the connection between one node and another. The root only has 2 children
   the left is always less than the root and the right is always greater.
   Each child of every parent works the same left=less right=greater.
+
+
+  Insert Pseudocode:
+    Create a new node starting at the root. Check if there is a root, if not
+    the root now becomes that new node. If there is a root, check if the value
+    of the new node is greater than or less the value of the root. If it is
+    greater, check to see if there is a node to the right. If there is, move
+    to that node and repeat these steps. If there is not, add that node as the
+    right property. If it is less, check to see if there is a node to the left.
+    If there is, move to that node and repeat these steps. If there is not, add
+    that node as the left property.
