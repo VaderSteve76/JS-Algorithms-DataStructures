@@ -19,3 +19,14 @@ Binary Search Tree:
     right property. If it is less, check to see if there is a node to the left.
     If there is, move to that node and repeat these steps. If there is not, add
     that node as the left property.
+
+
+  Find Pseudocode:
+    Starting at the root, check if there is a root, if not you're done searching.
+    If there is a root, check if the value of the new node is the value you're
+    searching for, if it is you're done. If not, check to see if the value is
+    greater or less than the value of the root. If it is greater, check to see
+    if there is a node to the right. If there is, move that node and repeat these
+    steps. If there is not, you're done searching. If it is less, check to see if
+    there is a node to the left. If there is, move to that node and repeat these
+    steps. If there is not, you're done searching.
