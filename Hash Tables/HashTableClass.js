@@ -2,6 +2,7 @@ class HashTable {
   constructor(size=53) {
     this.keyMap = new Array(size);
   }
+
   _hash(key) {
     let total = 0;
     let weird_prime = 31;
@@ -12,4 +13,19 @@ class HashTable {
     }
     return total;
   }
+
+  set(key, value) {
+    let index = this._hash(key);
+    if(!this.keyMap[index]) {
+      this.keyMap[index] = [];
+    }
+    this.keyMap[index].push([key, value]);
+  }
+
 }
+
+
+let ht = new HashTable();
+ht.set("hello world", "goodbye");
+ht.set("cats", "are cool");
+ht.set("I love", "burgers");
