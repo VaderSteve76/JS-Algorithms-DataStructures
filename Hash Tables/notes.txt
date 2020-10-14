@@ -4,3 +4,18 @@ Hash Table:
   following operations: finding values, adding new values, and removing.
   Nearly every programming language has some sort of hash table data structure.
   Because of their speed, hash tables are very commonly used.
+
+
+  Dealing with collisions:
+    Even with a large array and a great hash function, collisions are
+    inevitable. There are many strategies for dealing with collisions.
+
+    Seperate chaining:
+      With a seperate chaining, at each index in the array we store
+      values using a more sophisticated data structure(array or linkedlist).
+      This allows you to store multiple key-value pairs at the same index.
+
+    Linear probing:
+      With linear probing, when you find a collision, you search through
+      the array to find the next empty slot. Unlike with seperate chaining
+      this allows you to store a single key-value at each index.
