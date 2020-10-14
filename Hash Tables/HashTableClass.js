@@ -22,10 +22,32 @@ class HashTable {
     this.keyMap[index].push([key, value]);
   }
 
+  get(key) {
+    let index = this._hash(key);
+    if(this.keyMap[index]) {
+      for(let i = 0; i < this.keyMap[index].length; i++) {
+        if(this.keyMap[index][i][0] === key) {
+          return this.keyMap[index][i][1];
+        }
+      }
+    }
+    return undefined;
+  }
+
 }
 
-
+// set
 let ht = new HashTable();
 ht.set("hello world", "goodbye");
 ht.set("cats", "are cool");
 ht.set("I love", "burgers");
+
+// get
+let ht = new HashTable(17);
+ht.set("maroon", "#800000");
+ht.set("yellow", "#FFFF00");
+ht.set("olive", "#808000");
+ht.set("salmon", "#FA8072");
+ht.set("lighcoral", "#F08080");
+ht.set("mediumvioletred", "#C71585");
+ht.set("plum", "#DDA0DD");
