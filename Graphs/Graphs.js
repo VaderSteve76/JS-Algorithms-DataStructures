@@ -21,6 +21,14 @@ class Graph {
     );
   }
 
+  removeVertex(vertex) {
+    while(this.adjacencyList[vertex].length) {
+      const adajcentVertex = this.adjacencyList[vertex].pop();
+      this.removeEdge(vertex, adajcentVertex);
+    }
+    delete this.adjacencyList[vertex];
+  }
+
 }
 
 let g = new Graph();
@@ -35,3 +43,9 @@ g.addEdge("New York", "London");
 g.addEdge("London", "Paris");
 g.addEdge("London", "Tokyo");
 g.addEdge("New York", "Paris");
+
+// remove vertex
+g.removeVertex("London");
+g.removeVertex("New York");
+g.removeVertex("Paris");
+g.removeVertex("Tokyo");
